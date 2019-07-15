@@ -1,0 +1,71 @@
+@import _color.sass
+@import _header.sass
+@import _main.sass
+@import _footer.sass
+
+// Default styles
+
+body
+  background-color: #080808
+
+.t-left
+  text-align: left
+.t-right
+  text-align: right
+.t-center
+  text-align: center
+
+.m-center
+  margin: 0 auto
+
+.d-flex
+  display: flex
+.j-c
+  justify-content: center
+// Default styles
+
+.page-list
+  margin-top: 8.5vh
+  position: absolute
+  left: 0
+  p
+    display: flex
+    align-self: center
+    margin: 0
+    padding: 0
+    margin-left: -5.7vh
+    margin-top: 7vh
+    -webkit-transform: rotate(-90deg)
+    -moz-transform: rotate(-90deg)
+    -o-transform: rotate(-90deg)
+    -ms-transform: rotate(-90deg)
+    transform: rotate(-270deg)
+    opacity: 0.25
+    color: #ffffff
+    font-family: "Ubuntu"
+    font-size: 2vh
+    font-weight: 800
+    letter-spacing: 1px
+  ul
+    li
+      margin-left: 0
+      margin-bottom: 1.6vh
+      img
+        min-width: 1vh
+        max-width: 1vh
+        margin-left: .2vh
+      .active
+        // border: 2px solid #5327ff
+        // padding: 4px
+        width: 1vh
+        height: 1vh
+        transform: scale(2.5)
+        border: .1vh solid #5327ff
+        border-radius: 100%
+        padding: .15vh
+        -moz-box-shadow: 0 0 1vh #5327ff
+        -webkit-box-shadow: 0 0 1vh #5327ff
+        box-shadow: 0 0 1vh  #5327ff
+
+@import _reset.sass
+@import _media.sass
