@@ -15,13 +15,12 @@
   font-weight: 900
   line-height: 6vh
   margin-bottom: 5vh
-
-
-
 .section
   &-1
+    .page-list
+      margin-top: 20vh
     &__bg
-      margin-top: 20px
+      margin-top: 2vh
       position: absolute
       top: 0
       z-index: -5
@@ -44,16 +43,14 @@
         margin-top: -9vh
         margin-right: -12vh
         position: absolute
-      &__elipse
-        min-width: 125%
-        min-width: 125%
-        max-width: 110%
-        z-index: -4
-        top: 0vh
-        right: 0vh
-        margin-top: -16vh
-        margin-right: -4vh
-        position: absolute
+    &__elipse
+      width: 95vh
+      z-index: -4
+      top: 0vh
+      right: 0vh
+      margin-top: -16.1vh
+      margin-right: 3vh
+      position: absolute
     &__input
       font-size: 2.3vh
       margin: 0 auto
@@ -81,6 +78,7 @@
         &:focus
           box-shadow: none
     &__btn
+      font-weight: 600
       margin-top: 8.5vh
       font-size: 3vh
       color: #fff
@@ -89,12 +87,26 @@
       width: 43vh
       height: 11vh
       box-shadow: 0 0 9vh 1.6vh rgba(35, 31, 32, 0.75)
-      background-color: #5327ff
+      background-color: #fff
       background-image: linear-gradient(-187deg, #5327ff 0%, #11aeff 100%)
+      transition: all .4s
+      &:hover
+        box-shadow: 0 0 9vh .2vh rgba(255, 255, 255, 0.65)
+        color: #333
+        background-image: none
       &:focus
         box-shadow: none
 .cic
+  transition: all .3s
   position: absolute
+#cic1:hover
+  transform: scale(1.23)
+#cic2:hover
+  transform: scale(1.03)
+#cic3:hover
+  transform: scale(1.03)
+#cic4:hover
+  transform: scale(1.03)
 #cic1
   top: 0
   margin-top: 67.3vh
@@ -117,13 +129,14 @@
   top: 0
 .section
   &-2
+    background: #fff!important
+    position: relative
     &__bg
       z-index: -5
       width: 100%
       position: absolute
       right: 0
       margin-top: 100.99vh
-
     &__elipse
       margin-top: 135vh
       margin-left: 40vh
@@ -154,7 +167,8 @@
         span
           color: #fff
 .play
-  z-index: 5!important
+  margin-top: 135vh
+  z-index: 5
   position: absolute
   left: 0
   margin-left: 43.5vh
@@ -196,10 +210,12 @@
       position: absolute
       margin-top: -63vh
       width: 100%
+      z-index: -5
     &__form
+      z-index: 3
       text-align: right
       margin: 0
-      margin-top: 132vh
+      margin-top: 122vh
       margin-right: 35vh
       right: 0
       input
@@ -223,14 +239,27 @@
 
 .section
   &-4
+    position: relative
     margin-top: 25vh
     &__text
       position: absolute
-      margin-top: -60vh
-      .section-t
-        font-size: 5vh!important
+      margin-top: -95vh
+      margin-left: 20vh
+      p.section-t
+        text-transform: uppercase
+        font-weight: 900
+        margin: 0
+        color: #000
+        font-size: 8vh
+        margin-bottom: 6.5vh
+        &-2
+          margin-top: -8vh
+          text-transform: uppercase
+          font-weight: 900
+          font-size: 10vh
+          color: #fff
       .section-t-grad
-        color: #fff!important
+        margin: 0
     .page-list
       position: absolute
       margin-top: -70vh
@@ -243,11 +272,85 @@
       width: 60vh
       position: absolute
       right: 0
-      margin-right: 30vh
+      margin-right: 19vh
+      -moz-margin-top: 21.7vh
       margin-top: -88vh
     &__citata
+      width: 98.5vh
       opacity: .25
       z-index: 1
       position: absolute
-      margin-left: 35vh
+      margin-left: 45vh
       margin-top: -80.2vh
+    &__mnepoxuitxt
+      z-index: 4
+      width: 44vh
+      position: absolute
+      margin-top: -43vh
+      margin-left: 70vh
+
+a
+  text-decoration: none!important
+
+.section-5
+  .page-list
+    z-index: 10
+    margin-top: 45vh
+  &-but
+    width: 100%
+    height: 30vh
+    position: relative
+    background-color: #be0f2e
+    display: flex
+    align-items: center
+    &__btn
+      letter-spacing: 1px
+      font-weight: 900
+      text-decoration: none
+      text-transform: uppercase
+      color: #ffffff
+      font-size: 3vh
+      z-index: 50
+      position: absolute
+      border-radius: 50px
+      background-color: #bc0f2f
+      padding: 3vh 8vh
+      min-width: 3.7vh
+      height: 10.45vh
+      right: 0
+      margin-right: 30vh
+      box-shadow: 0 0 80px #fff
+      transition: all .2s
+    &__btn:hover
+      background-color: #ffffff
+      color: #333
+      text-decoration: none
+      box-shadow: 0 0 10px #fff
+
+
+
+.footer
+  &-xi
+    width: 75vh
+    position: absolute
+    margin-left: 32vh
+    z-index: -4
+    margin-top: 35vh
+  &-tx
+    width: 64vh
+    position: absolute
+    margin-top: 40vh
+    right: 0
+    margin-right: 20vh
+  &-man
+    position: absolute
+    margin-top: -27vh
+    width: 100%
+    max-width: 100%
+  form
+    position: absolute
+    margin-top: 60vh
+  .btn
+    margin: 0
+    margin-right: -2.1vh
+    width: 50vh
